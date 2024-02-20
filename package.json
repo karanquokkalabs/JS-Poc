@@ -1,0 +1,22 @@
+{
+  "name": "js-poc",
+  "version": "1.0.0",
+  "description": "Create A Poc To Implement JS Concept",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanquokkalabs/JS-Poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karanquokkalabs/JS-Poc/issues"
+  },
+  "homepage": "https://github.com/karanquokkalabs/JS-Poc#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
