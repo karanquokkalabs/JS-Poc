@@ -6,7 +6,8 @@
     <title>TO Do List</title>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
   </head>
-  <body>
+
+  <body >
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -34,13 +35,13 @@
 
                 <div class="row g-3 align-items-end">
                     <div class="col-md-6">
-                        <label for="text" class="form-label">Input</label>
-                        <input id="text" class="form-control" type="text">
+                        <label for="title_value" class="form-label">Title Input</label>
+                        <input id="title_value" class="form-control" type="text" autofocus>
                       </div>
                     
                       
                       <div class="col-md">
-                        <label for="filedselector" class="form-label">Input</label>
+                        <label for="filedselector" class="form-label">Input Type</label>
                         <select class="form-select" id="filedselector" aria-label="Default select example">
                             <option selected disabled value='Null'>Choose</option>
                             <option value="text">Text</option>
@@ -52,7 +53,7 @@
                       </div>
 
                       <div class="col-md">
-                        <button id="AddBtn" class="btn btn-primary px-5">Add</button>
+                        <button id="AddBtn" class="btn btn-primary px-5" onclick="Submit()">Add</button>
                       </div>
                       
                   </div>    
