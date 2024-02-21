@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-20(Functio_with_objects_array)</title>
+</head>
+<body>
+
+    <div id="output_array1"></div>
+    <div id="output_array2"></div>
+    
+</body>
+
+
+<script>
+
+
+function demo1(one , two){
+    return one + two
+}
+
+document.getElementById('output_array1').innerHTML = `First Simple Function Output : - ${demo1(10 ,5)}`
+
+
+
+// -----------------------------------------------------------------------
+
+
+
+let outFun = ''
+function demo2(...three){
+    // console.log(three);
+    sum = 0
+    
+    three.forEach((AllVal) => sum +=AllVal);
+    console.log(sum);
+    outFun = sum
+
+    return three
+    
+}
+
+document.getElementById('output_array2').innerHTML = `This is Function Assignments : - ${demo2(10 ,5 ,25 , 1 , 50 , 79 , 45,45,64)} + Function Total :- ${outFun}`
+
+
+
+    
+</script>
+
+
+</html>
