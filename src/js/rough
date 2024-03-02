@@ -1,0 +1,180 @@
+let Title_Val = document.getElementById('title_value')
+let SelectorType = document.getElementById('filedselector')
+let OutputSection = document.getElementById('AllData')
+let UL_parent= document.createElement('ol')
+
+
+
+let Sub = document.getElementById('AddBtn')
+
+function Submit(){
+
+    // if(Title_Val.value !== ''){
+
+    //     let Label = document.createElement('label')
+    //     Label.classList.add('testLabel')
+    //     Label.textContent=Title_Val.value
+
+        
+    //     let Ul_child = document.createElement('li')
+    //     Ul_child.append(Label)
+    //     UL_parent.append(Ul_child)
+    // }
+
+
+    // else{
+    //     alert('enter value')
+    // } 
+
+    console.log(SelectorType.value);
+    
+
+    if(Title_Val.value !== ''){
+        
+
+        let Label = document.createElement('label');
+        Label.classList.add('form-label');
+        Label.setAttribute('for',Title_Val.value);
+        Label.textContent=Title_Val.value
+
+        let LabelInput = document.createElement('input')
+        LabelInput.classList.add('form-control')
+        LabelInput.setAttribute('id',Title_Val.value);
+
+        LabelInput.type=SelectorType.value
+
+        
+        let Ul_child = document.createElement('li')
+        Ul_child.append(Label)
+        Ul_child.append(LabelInput)
+        UL_parent.append(Ul_child)
+
+        
+        
+    }
+
+
+    else{
+        alert('First Enter The Value')
+    }   
+
+            
+    OutputSection.append(UL_parent)
+
+    Title_Val.value = ''
+    Title_Val.setAttribute('autofocus','')
+    
+};
+
+
+
+// OutputSection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let Title_Val = document.getElementById('title_value')
+let TypeValue = document.getElementById('filedselector')
+// let SelectorType = document.querySelector('#filedselector').value
+let OutputSection = document.getElementById('AllData')
+let UL_parent= document.createElement('ol')
+
+let SelectorType = TypeValue.value
+
+
+let Sub = document.getElementById('AddBtn')
+
+function Submit(){
+
+    if(Title_Val.value !== ''){
+        
+
+        let Label = document.createElement('label');
+        Label.classList.add('form-label');
+        Label.setAttribute('for',Title_Val.value);
+        Label.textContent=Title_Val.value
+
+        let LabelInput = document.createElement('input')
+        LabelInput.classList.add('form-control')
+        LabelInput.setAttribute('id',Title_Val.value);
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        LabelInput.type=SelectorType.value
+        alert(SelectorType)
+
+        
+        let Ul_child = document.createElement('li')
+        Ul_child.append(Label)
+        Ul_child.setAttribute('class','mb-4')
+        Ul_child.append(LabelInput)
+        UL_parent.append(Ul_child)
+        
+        
+    }
+
+
+    else{
+        alert('First Enter The Value')
+    }   
+
+
+
+
+
+
+
+
+            
+    OutputSection.append(UL_parent)
+
+    Title_Val.value = ''
+    Title_Val.setAttribute('autofocus','')
+    
+};
+
+
+
+// OutputSection

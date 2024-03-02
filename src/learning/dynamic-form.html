@@ -43,7 +43,7 @@
                       <div class="col-md">
                         <label for="filedselector" class="form-label">Input Type</label>
                         <select class="form-select" id="filedselector" aria-label="Default select example">
-                            <option selected disabled value='Null'>Choose</option>
+                            <!-- <option selected disabled value='null'>Choose</option> -->
                             <option value="text">Text</option>
                             <option value="password">Password</option>
                             <option value="email">Email</option>
@@ -53,17 +53,31 @@
                       </div>
 
                       <div class="col-md">
-                        <button id="AddBtn" class="btn btn-primary px-5" onclick="Submit()">Add</button>
+                        <button id="AddBtn" class="btn btn-primary px-5 w-100" onclick="Submit()">Add</button>
                       </div>
                       
                   </div>    
+
+
+                  
+
+              <div class="Watch_Form mt-5 d-none">
+                
+                <h3>OutPut</h3>
+                <div id="AllData" class="position-relative pb-5">
+
+                  <div id="list_data"></div>
+                  
+                  <!-- <button type="button" class="btn btn-primary submit_btn d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Save changes</button> -->
+                  <button type="button" class="btn btn-primary submit_btn d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Save changes</button>
+                </div>
+                      
+              </div>
             </div>
             
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h3>OutPut</h3>
-                <div id="AllData">
-                    
-                </div>
+               
+              <div id="complete_form"></div>
                 
             </div>
         </div>
